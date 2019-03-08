@@ -1,0 +1,57 @@
+@import "../../../node_modules/bulma/sass/elements/title.sass";
+@import "../../../node_modules/bulma/sass/grid/tiles.sass";
+@import"../../../node_modules/bulma/sass/grid/columns.sass";
+@import"../../../node_modules/bulma/sass/layout/section.sass";
+@import"../../../node_modules/bulma/sass/elements/button.sass";
+@import"../../../node_modules/bulma/sass/elements/notification.sass";
+@import "../../../node_modules/bulma/sass/elements/image.sass";
+
+
+
+.columns.is-multiline {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-left: 20%;
+}
+      .column {
+        height: 200px;
+        margin: 10px;
+        text-align: center;
+        font-size: 2em;
+      }
+      
+      .column p {
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+      }
+      
+
+
+
+
+
+.column{
+  background-color: rgb(220, 247, 248);
+  column-gap:5.75rem;
+  box-shadow: 0 4px 8px 0 black;
+
+
+}
+.column.p{
+  background-color: aliceblue;
+  margin-top: 20px;
+
+}
+.column.is-two-fifths, .column.is-two-fifths-tablet {
+  flex: inherit;
+  height: 60%;
+  
+}
+.image{
+  width: 40%;
+  height: 50%;
+  position: center;
+}
+
+ 

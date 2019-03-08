@@ -1,0 +1,51 @@
+@import "../../../node_modules/bulma/sass/elements/title.sass";
+@import"../../../node_modules/bulma/sass/grid/columns.sass";
+@import"../../../node_modules/bulma/sass/layout/section.sass";
+@import"../../../node_modules/bulma/sass/elements/button.sass";
+@import "../../../node_modules/bulma/sass/elements/image.sass";
+
+
+
+.columns.is-multiline {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-left: 20%;
+}
+      .column {
+        height: 200px;
+        margin: 10px;
+        text-align: center;
+        font-size: 2em;
+        background-color: black;
+        column-gap:5.75rem;
+
+      }
+      
+      .column p {
+        background: rgba(0, 0, 0, 0.6);
+    color:white;
+  background-color: black;
+  margin-top: 20px;
+
+}
+.column.is-two-fifths, .column.is-two-fifths-tablet {
+  flex: inherit;
+  height: 60%;
+  
+}
+.svg-inline--fa {
+  color: white;
+size:100px;
+margin-left:10px;}
+
+.is-size-5{
+  color:white;
+}
+.image{
+  width: 40%;
+  height: 50%;
+  position: center;
+}
+
+ 

@@ -7,12 +7,14 @@ import { Component } from "@stencil/core";
 export class SpiHome {
   render() {
     return (
-      <div class="spi-home">
-        <div class="container is-large has-text-centered">
-          <h1 class="title is-bold">Bienvenue sur l'interface du SPI !</h1>
-          <h2 class="subtitle">Pour continuer veuillez-vous identifier.</h2>
-        </div>
-      </div>
+      <section class="hero is-link is-fullheight-with-navbar">
+  <div class="hero-body">
+    <div class="container">
+      <p class="title">
+      <br/><br/><br></br>    Bienvenue       </p>
+    </div>
+  </div>
+</section>
     );
   }
 }

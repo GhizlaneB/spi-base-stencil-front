@@ -1,0 +1,31 @@
+@import"../../../node_modules/bulma/sass/elements/form.sass";
+
+.field{
+    position: center;
+    color: aliceblue
+}
+.icon{
+    padding: 5px;
+    color:black;
+}
+.label{
+    color:white
+    
+}
+.form.field{
+    position: center;
+    margin-left: 40%;
+}
+.container{
+    position:inherit;
+}
+.title{
+    color:white;
+}
+.title{
+    font-family: fantasy;
+}
+.button.is-static{
+    color:white
+
+}

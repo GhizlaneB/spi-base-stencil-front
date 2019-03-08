@@ -9,12 +9,92 @@ import '@stencil/core';
 
 import '@stencil/router';
 import '@stencil/state-tunnel';
+import {
+  MatchResults,
+  RouterHistory,
+} from '@stencil/router';
 
 
 export namespace Components {
 
-  interface SpiBof {}
-  interface SpiBofAttributes extends StencilHTMLAttributes {}
+  interface EnseignantAdd {
+    'home': RouterHistory;
+  }
+  interface EnseignantAddAttributes extends StencilHTMLAttributes {
+    'home'?: RouterHistory;
+  }
+
+  interface EnseignantDelete {
+    'history': RouterHistory;
+    'match': MatchResults;
+  }
+  interface EnseignantDeleteAttributes extends StencilHTMLAttributes {
+    'history'?: RouterHistory;
+    'match'?: MatchResults;
+  }
+
+  interface EnseignantDetail {
+    'match': MatchResults;
+  }
+  interface EnseignantDetailAttributes extends StencilHTMLAttributes {
+    'match'?: MatchResults;
+  }
+
+  interface EnseignantEdit {
+    'match': MatchResults;
+    'nom': string;
+  }
+  interface EnseignantEditAttributes extends StencilHTMLAttributes {
+    'match'?: MatchResults;
+    'nom'?: string;
+  }
+
+  interface EnseignantSearch {}
+  interface EnseignantSearchAttributes extends StencilHTMLAttributes {}
+
+  interface EnseignantSearchname {}
+  interface EnseignantSearchnameAttributes extends StencilHTMLAttributes {}
+
+  interface SpiEnseignant {}
+  interface SpiEnseignantAttributes extends StencilHTMLAttributes {}
+
+  interface FormationAdd {
+    'home': RouterHistory;
+  }
+  interface FormationAddAttributes extends StencilHTMLAttributes {
+    'home'?: RouterHistory;
+  }
+
+  interface FormationDelete {
+    'history': RouterHistory;
+    'match': MatchResults;
+  }
+  interface FormationDeleteAttributes extends StencilHTMLAttributes {
+    'history'?: RouterHistory;
+    'match'?: MatchResults;
+  }
+
+  interface FormationDetail {
+    'match': MatchResults;
+  }
+  interface FormationDetailAttributes extends StencilHTMLAttributes {
+    'match'?: MatchResults;
+  }
+
+  interface FormationEdit {
+    'match': MatchResults;
+    'nomFormation': string;
+  }
+  interface FormationEditAttributes extends StencilHTMLAttributes {
+    'match'?: MatchResults;
+    'nomFormation'?: string;
+  }
+
+  interface FormationSearchname {}
+  interface FormationSearchnameAttributes extends StencilHTMLAttributes {}
+
+  interface SpiFormation {}
+  interface SpiFormationAttributes extends StencilHTMLAttributes {}
 
   interface SpiHeader {}
   interface SpiHeaderAttributes extends StencilHTMLAttributes {}
@@ -28,24 +108,120 @@ export namespace Components {
 
 declare global {
   interface StencilElementInterfaces {
-    'SpiBof': Components.SpiBof;
+    'EnseignantAdd': Components.EnseignantAdd;
+    'EnseignantDelete': Components.EnseignantDelete;
+    'EnseignantDetail': Components.EnseignantDetail;
+    'EnseignantEdit': Components.EnseignantEdit;
+    'EnseignantSearch': Components.EnseignantSearch;
+    'EnseignantSearchname': Components.EnseignantSearchname;
+    'SpiEnseignant': Components.SpiEnseignant;
+    'FormationAdd': Components.FormationAdd;
+    'FormationDelete': Components.FormationDelete;
+    'FormationDetail': Components.FormationDetail;
+    'FormationEdit': Components.FormationEdit;
+    'FormationSearchname': Components.FormationSearchname;
+    'SpiFormation': Components.SpiFormation;
     'SpiHeader': Components.SpiHeader;
     'SpiHome': Components.SpiHome;
     'SpiRoot': Components.SpiRoot;
   }
 
   interface StencilIntrinsicElements {
-    'spi-bof': Components.SpiBofAttributes;
+    'enseignant-add': Components.EnseignantAddAttributes;
+    'enseignant-delete': Components.EnseignantDeleteAttributes;
+    'enseignant-detail': Components.EnseignantDetailAttributes;
+    'enseignant-edit': Components.EnseignantEditAttributes;
+    'enseignant-search': Components.EnseignantSearchAttributes;
+    'enseignant-searchname': Components.EnseignantSearchnameAttributes;
+    'spi-enseignant': Components.SpiEnseignantAttributes;
+    'formation-add': Components.FormationAddAttributes;
+    'formation-delete': Components.FormationDeleteAttributes;
+    'formation-detail': Components.FormationDetailAttributes;
+    'formation-edit': Components.FormationEditAttributes;
+    'formation-searchname': Components.FormationSearchnameAttributes;
+    'spi-formation': Components.SpiFormationAttributes;
     'spi-header': Components.SpiHeaderAttributes;
     'spi-home': Components.SpiHomeAttributes;
     'spi-root': Components.SpiRootAttributes;
   }
 
 
-  interface HTMLSpiBofElement extends Components.SpiBof, HTMLStencilElement {}
-  var HTMLSpiBofElement: {
-    prototype: HTMLSpiBofElement;
-    new (): HTMLSpiBofElement;
+  interface HTMLEnseignantAddElement extends Components.EnseignantAdd, HTMLStencilElement {}
+  var HTMLEnseignantAddElement: {
+    prototype: HTMLEnseignantAddElement;
+    new (): HTMLEnseignantAddElement;
+  };
+
+  interface HTMLEnseignantDeleteElement extends Components.EnseignantDelete, HTMLStencilElement {}
+  var HTMLEnseignantDeleteElement: {
+    prototype: HTMLEnseignantDeleteElement;
+    new (): HTMLEnseignantDeleteElement;
+  };
+
+  interface HTMLEnseignantDetailElement extends Components.EnseignantDetail, HTMLStencilElement {}
+  var HTMLEnseignantDetailElement: {
+    prototype: HTMLEnseignantDetailElement;
+    new (): HTMLEnseignantDetailElement;
+  };
+
+  interface HTMLEnseignantEditElement extends Components.EnseignantEdit, HTMLStencilElement {}
+  var HTMLEnseignantEditElement: {
+    prototype: HTMLEnseignantEditElement;
+    new (): HTMLEnseignantEditElement;
+  };
+
+  interface HTMLEnseignantSearchElement extends Components.EnseignantSearch, HTMLStencilElement {}
+  var HTMLEnseignantSearchElement: {
+    prototype: HTMLEnseignantSearchElement;
+    new (): HTMLEnseignantSearchElement;
+  };
+
+  interface HTMLEnseignantSearchnameElement extends Components.EnseignantSearchname, HTMLStencilElement {}
+  var HTMLEnseignantSearchnameElement: {
+    prototype: HTMLEnseignantSearchnameElement;
+    new (): HTMLEnseignantSearchnameElement;
+  };
+
+  interface HTMLSpiEnseignantElement extends Components.SpiEnseignant, HTMLStencilElement {}
+  var HTMLSpiEnseignantElement: {
+    prototype: HTMLSpiEnseignantElement;
+    new (): HTMLSpiEnseignantElement;
+  };
+
+  interface HTMLFormationAddElement extends Components.FormationAdd, HTMLStencilElement {}
+  var HTMLFormationAddElement: {
+    prototype: HTMLFormationAddElement;
+    new (): HTMLFormationAddElement;
+  };
+
+  interface HTMLFormationDeleteElement extends Components.FormationDelete, HTMLStencilElement {}
+  var HTMLFormationDeleteElement: {
+    prototype: HTMLFormationDeleteElement;
+    new (): HTMLFormationDeleteElement;
+  };
+
+  interface HTMLFormationDetailElement extends Components.FormationDetail, HTMLStencilElement {}
+  var HTMLFormationDetailElement: {
+    prototype: HTMLFormationDetailElement;
+    new (): HTMLFormationDetailElement;
+  };
+
+  interface HTMLFormationEditElement extends Components.FormationEdit, HTMLStencilElement {}
+  var HTMLFormationEditElement: {
+    prototype: HTMLFormationEditElement;
+    new (): HTMLFormationEditElement;
+  };
+
+  interface HTMLFormationSearchnameElement extends Components.FormationSearchname, HTMLStencilElement {}
+  var HTMLFormationSearchnameElement: {
+    prototype: HTMLFormationSearchnameElement;
+    new (): HTMLFormationSearchnameElement;
+  };
+
+  interface HTMLSpiFormationElement extends Components.SpiFormation, HTMLStencilElement {}
+  var HTMLSpiFormationElement: {
+    prototype: HTMLSpiFormationElement;
+    new (): HTMLSpiFormationElement;
   };
 
   interface HTMLSpiHeaderElement extends Components.SpiHeader, HTMLStencilElement {}
@@ -67,14 +243,38 @@ declare global {
   };
 
   interface HTMLElementTagNameMap {
-    'spi-bof': HTMLSpiBofElement
+    'enseignant-add': HTMLEnseignantAddElement
+    'enseignant-delete': HTMLEnseignantDeleteElement
+    'enseignant-detail': HTMLEnseignantDetailElement
+    'enseignant-edit': HTMLEnseignantEditElement
+    'enseignant-search': HTMLEnseignantSearchElement
+    'enseignant-searchname': HTMLEnseignantSearchnameElement
+    'spi-enseignant': HTMLSpiEnseignantElement
+    'formation-add': HTMLFormationAddElement
+    'formation-delete': HTMLFormationDeleteElement
+    'formation-detail': HTMLFormationDetailElement
+    'formation-edit': HTMLFormationEditElement
+    'formation-searchname': HTMLFormationSearchnameElement
+    'spi-formation': HTMLSpiFormationElement
     'spi-header': HTMLSpiHeaderElement
     'spi-home': HTMLSpiHomeElement
     'spi-root': HTMLSpiRootElement
   }
 
   interface ElementTagNameMap {
-    'spi-bof': HTMLSpiBofElement;
+    'enseignant-add': HTMLEnseignantAddElement;
+    'enseignant-delete': HTMLEnseignantDeleteElement;
+    'enseignant-detail': HTMLEnseignantDetailElement;
+    'enseignant-edit': HTMLEnseignantEditElement;
+    'enseignant-search': HTMLEnseignantSearchElement;
+    'enseignant-searchname': HTMLEnseignantSearchnameElement;
+    'spi-enseignant': HTMLSpiEnseignantElement;
+    'formation-add': HTMLFormationAddElement;
+    'formation-delete': HTMLFormationDeleteElement;
+    'formation-detail': HTMLFormationDetailElement;
+    'formation-edit': HTMLFormationEditElement;
+    'formation-searchname': HTMLFormationSearchnameElement;
+    'spi-formation': HTMLSpiFormationElement;
     'spi-header': HTMLSpiHeaderElement;
     'spi-home': HTMLSpiHomeElement;
     'spi-root': HTMLSpiRootElement;
